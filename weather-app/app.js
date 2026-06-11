@@ -1,30 +1,8 @@
-// Purpose of package.json:
-// This file stores the list of packages my project needs.
-// When someone runs "npm install", it installs everything from this file.
-// It helps keep the project organized and easy to share.
-
-// Why node_modules should NOT be in version control:
-// node_modules is very big and can be created again anytime.
-// We should not upload it to GitHub.
-// Instead, we add "node_modules" to .gitignore so it is not included.
-
-// How npm install reinstalls dependencies:
-// If node_modules is deleted, running "npm install" will read package.json and download all the packages again.
-// This is helpful when working with a team because everyone can rebuild the same setup easily.
-
-//Practice
 // Imported yargs,chalk and hideBin
 
 import yargs from "yargs";
 import { hideBin } from "yargs/helpers";
 import chalk from "chalk";
-
-
-/*const yargs = require("yargs");
-const { hideBin } = require("yargs/helpers");
-const chalk = require("chalk");
-*/
-
 
 // Parse command line arguments
 
